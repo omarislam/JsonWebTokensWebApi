@@ -4,9 +4,11 @@ using Microsoft.Owin.Security.Jwt;
 using Owin;
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
+using Thinktecture.IdentityModel.Tokens;
 
 namespace ResourceServer.Api
 {
@@ -29,7 +31,9 @@ namespace ResourceServer.Api
         public void ConfigureOAuth(IAppBuilder app)
         {
             var issuer = "http://localhost:25374/";
-            var audience = "099153c2625149bc8ecb3e85e03f0022";
+            var audience1 = "099153c2625149bc8ecb3e85e03f0022";
+            var audience2 = "099153c2625149bc8ecb3e85e03f0023";
+
             var secret = TextEncodings.Base64Url.Decode("IxrAjDoa2FqElO7IhrSrUJELhUckePEPVpaePlS_Xaw");
 
             // Api controllers with an [Authorize] attribute will be validated with JWT
@@ -37,7 +41,7 @@ namespace ResourceServer.Api
                 new JwtBearerAuthenticationOptions
                 {
                     AuthenticationMode = AuthenticationMode.Active,
-                    AllowedAudiences = new[] { audience },
+                    AllowedAudiences = new[] { audience1,audience2 },
                     IssuerSecurityTokenProviders = new IIssuerSecurityTokenProvider[]
                     {
                         new SymmetricKeyIssuerSecurityTokenProvider(issuer, secret)

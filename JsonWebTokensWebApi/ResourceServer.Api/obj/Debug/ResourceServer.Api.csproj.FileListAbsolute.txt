@@ -47,3 +47,5 @@ C:\Users\Islam Abd Elrazek\Documents\GitHub\JsonWebTokensWebApi\JsonWebTokensWeb
 C:\Users\Islam Abd Elrazek\Documents\GitHub\JsonWebTokensWebApi\JsonWebTokensWebApi\ResourceServer.Api\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\Islam Abd Elrazek\Documents\GitHub\JsonWebTokensWebApi\JsonWebTokensWebApi\ResourceServer.Api\bin\Swashbuckle.Core.dll
 C:\Users\Islam Abd Elrazek\Documents\GitHub\JsonWebTokensWebApi\JsonWebTokensWebApi\ResourceServer.Api\bin\WebActivatorEx.dll
+C:\Users\Islam Abd Elrazek\Documents\GitHub\JsonWebTokensWebApi\JsonWebTokensWebApi\ResourceServer.Api\bin\Thinktecture.IdentityModel.Core.dll
+C:\Users\Islam Abd Elrazek\Documents\GitHub\JsonWebTokensWebApi\JsonWebTokensWebApi\ResourceServer.Api\bin\Thinktecture.IdentityModel.Core.pdb

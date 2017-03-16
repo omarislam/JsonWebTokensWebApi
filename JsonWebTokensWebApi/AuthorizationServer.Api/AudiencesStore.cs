@@ -22,6 +22,15 @@ namespace AuthorizationServer.Api
                                     Base64Secret = "IxrAjDoa2FqElO7IhrSrUJELhUckePEPVpaePlS_Xaw",
                                     Name = "ResourceServer.Api 1"
                                 });
+
+
+            AudiencesList.TryAdd("099153c2625149bc8ecb3e85e03f0023",
+                              new Audience
+                              {
+                                  ClientId = "099153c2625149bc8ecb3e85e03f0023",
+                                  Base64Secret = "IxrAjDoa2FqElO7IhrSrUJELhUckePEPVpaePlS_Xaw",
+                                  Name = "ResourceServer.Api 2"
+                              });
         }
 
         public static Audience AddAudience(string name)
